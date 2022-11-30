@@ -1,0 +1,8 @@
+<h1>Home</h1>
+
+<p>
+Usuário: <%= current_user.email %>
+</p>
+
+<%= button_to "Editar usuário", edit_user_registration_path, method: :get  %>
+<%= button_to "logout", destroy_user_session_path, method: :get  %>
